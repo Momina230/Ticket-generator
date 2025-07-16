@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conference Ticket Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Decorative patterns -->
+  <img src="assets/images/pattern-squiggly-line-bottom-desktop.svg" alt="" class="pattern bottom-pattern" />
+  <img src="assets/images/pattern-squiggly-line-top.svg" alt="" class="pattern top-pattern" />
+  
+  <main class="container">
+
+    <!-- Logo -->
+    <div class="logo-container">
+      <img src="assets/images/logo-full.svg" alt="Logo" class="logo" />
+    </div>
+<p class="intro-text">Your journey to <strong>Coding Conf 2025</strong> starts here</p>
+   
+    <!-- === Form === -->
+    <form id="ticketForm" class="form" novalidate>
+      <!-- Upload Box -->
+      <div class="form-group upload-box" id="uploadBox">
+        <input type="file" id="avatar" name="avatar" accept="image/*" hidden />
+        <label for="avatar" class="upload-label-box">
+          <img src="assets/images/icon-upload.svg" alt="Upload Icon" class="upload-icon" />
+          <p>Drag & drop or <span class="upload-click">click to upload</span></p>
+        </label>
+        <div class="avatar-preview-container" id="avatarPreviewContainer" hidden>
+          <img id="avatarPreview" class="avatar-preview" alt="Preview" />
+          <button type="button" id="removeAvatar" class="remove-avatar" title="Remove photo">×</button>
+        </div>
+
+       
+      </div>
+      <div class="upload-instructions">
+  <img src="assets/images/icon-info.svg" alt="Info Icon" class="instruction-icon" />
+  <span>Upload your photo (max 2MB). JPG, PNG formats.</span>
+</div>
+
+      <!-- Name -->
+      <div class="form-group">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" name="fullName" required />
+      </div>
+      
+
+      <!-- Email -->
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required placeholder="example@gmail.com" />
+      </div>
+
+      <!-- GitHub -->
+      <div class="form-group">
+        <label for="github">GitHub Username</label>
+        <input type="text" id="github" name="github" required placeholder="your-github-username" />
+      </div>
+
+      <button type="submit">Generate Ticket</button>
+    </form>
+
+    <!-- === Ticket Preview Section === -->
+    <section class="ticket" id="preview" hidden>
+      <img id="ticketAvatar" src="assets/avatar-placeholder.png" alt="Avatar" />
+      <h2 id="ticketName">Name</h2>
+      <p id="ticketEmail">Email</p>
+      <p id="ticketgithub">GitHub</p>
+    </section>
+    
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

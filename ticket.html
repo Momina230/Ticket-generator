@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ticket - Coding Conf 2025</title>
+  <link rel="stylesheet" href="ticket.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- Background Patterns -->
+    <img src="assets/images/pattern-squiggly-line-top.svg" alt="Top Pattern" class="pattern top-pattern" />
+    <img src="assets/images/pattern-squiggly-line-bottom-desktop.svg" alt="Bottom Pattern" class="pattern bottom-pattern" />
+
+    <!-- Main Content -->
+    <main class="container">
+      <!-- Logo -->
+      <div class="logo-container">
+        <img src="assets/images/logo-full.svg" alt="Logo" class="logo" />
+      </div>
+
+      <!-- Intro Text -->
+      <div class="intro-text">
+  <h1>Congrats, <span id="userName" class="glow-name"></span>!<br>Your ticket is ready.</h1>
+  <p>We've emailed your ticket to</p>
+  <p><span id="userEmail" class="glow-name"></span> and will send updates in</p>
+  <p>the run up to the event.</p>
+</div>
+
+      <!-- Ticket Card -->
+      <div class="ticket-wrapper">
+        <img src="assets/images/pattern-ticket.svg" class="ticket-shape" alt="Ticket Background" />
+        <div class="ticket-overlay">
+             <img src="assets/images/logo-full.svg" alt="Logo" class="ticket-logo" />
+
+          <div class="ticket-left">
+            <p class="conf-date">Jan 31, 2025 / Austin, TX</p>
+            <div class="user-info">
+              <img id="userImage" src="" alt="User" />
+              <div>
+                <p class="username" id="userFullName"></p>
+                <p class="github">
+                  <img src="assets/images/icon-github.svg" alt="GitHub" class="gh-icon" />
+                  <span id="userHandle"></span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="ticket-id">#010609</div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="ticket.js"></script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url("assets/images/background-desktop.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Courier New', Courier, monospace;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  color: white;
+  text-align: center;
+}
+.page-wrapper {
+  position: relative;
+  min-height: 100vh;
+}
+.logo-container {
+  display: flex;
+  justify-content: center;
+    text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  overflow: visible;
+}
+
+.logo {
+  max-width: 100%;     /* Adjust as needed */
+  height: auto;
+  /* Center the logo */
+}
+.pattern {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  height: auto;
+}
+.ticket-logo {
+  width: 100px;
+  margin-bottom: 0.5rem;
+  margin-right: 150px;
+}
+
+
+.bottom-pattern {
+  bottom: 0;
+  left: 0;
+  width: 100%; /* stretch fully across bottom */
+  max-width: 800px; /* optional: limit width on huge screens */
+}
+.glow-name {
+  background: linear-gradient(90deg, #ff0000, #ffffff, #ff0000);
+  background-size: 200% auto;
+  background-clip: text;
+   -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;}
+
+
+.top-pattern {
+  top: 0;
+  right: 0;
+  width: 60%; /* take more space horizontally */
+  max-width: 600px;
+}
+.heading h1 {
+  font-size: 2rem;
+}
+
+.heading span {
+  color: #ff6a3d;
+}
+
+.ticket {
+  position: relative;
+  width: 350px;
+  margin: 2rem auto;
+  background-color: #1e1e3f;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.ticket-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.ticket-content {
+  position: relative;
+  z-index: 1;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.conf-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ff6a3d;
+}
+
+.conf-date {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: #bbb;
+  margin-left: -10px;
+}
+
+.user-info img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+/* Align name + GitHub beside avatar */
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.user-info div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.username {
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  margin: 0;
+  margin-right: 55;
+}
+.gh-icon {
+  width: 15px !important;
+  height: 15px !important;
+  border-radius: 0  !important;
+  margin-right: 6px     !important;
+  vertical-align:center  !important;
+  object-fit: contain   !important;
+}
+
+/* Align GitHub icon with handle */
+.github {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-top: 0.2rem;
+}
+
+
+.ticket-id {
+position: absolute;
+  right: -10px;          /* Push it outside the ticket edge slightly */
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  transform-origin: center;
+  font-size: 0.8rem;
+  color: #aaa;
+  font-weight: bold;
+}
+.ticket-wrapper {
+  position: relative;
+  width: 350px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.ticket-shape {
+  width: 100%;
+  display: block;
+  margin-right: -8px;
+}
+
+.ticket-overlay {
+  position: absolute;
+  top: 0;
+  
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  z-index: 1;
+  pointer-events: none; /* If it's just visual */
+  color: white;
+}
+
